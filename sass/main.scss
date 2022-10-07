@@ -1,0 +1,13 @@
+// --------------- base styles ---------------
+
+@import './utils/vars';
+@import './base/base';
+@import './components/components';
+
+// --------------- layout styles ---------------
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/service';
+@import './layout/team';
+@import './layout/footer';

@@ -1,0 +1,140 @@
+:root {
+  --main-txt-cl: #212121;
+  --secondary-txt-cl: #ffffff;
+  --ouwer-txt-cl: #757575;
+  --accent-sec-cl: #f38181;
+  --accent-cl: #fce38a;
+  --logo-color-text: #eaffd0;
+  --service-icon-cl: #95e1d3;
+  --font-accent: "Kaushan Script", cursive;
+  --font-main: "Montserrat", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --background-section: #e5e5e5;
+  --line-color: #ececec;
+  --background-color: #ffffff;
+  --icon-color: #afb1b8;
+}
+
+body {
+  background-color: var(--secondary-txt-cl);
+  font-family: var(--font-main);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: var(--accent-sec-cl);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  color: var(--secondary-txt-cl);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav__list {
+  display: flex;
+  gap: 55px;
+}
+
+.header-nav__link {
+  position: relative;
+  display: block;
+  color: var(--secondary-txt-cl);
+  text-transform: uppercase;
+  padding: 40px 0;
+  outline: transparent;
+  transition: color 250ms;
+}
+
+.header-nav__link:hover,
+.header-nav__link:focus {
+  color: var(--accent-cl);
+}
+
+.header-nav__link::after,
+.header-nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: var(--accent-cl);
+  transition: width 250ms;
+}
+
+.header-nav__link:hover::after,
+.header-nav__link:focus::after {
+  width: 100%;
+}
+
+.header-widget {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  gap: 40px;
+}
+
+.header-widget__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}/*# sourceMappingURL=main.css.map */
