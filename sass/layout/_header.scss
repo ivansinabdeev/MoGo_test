@@ -1,5 +1,9 @@
 .header {
-  background-color: var(--accent-sec-cl);
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header .container {
   display: flex;
@@ -27,7 +31,7 @@
   padding: 40px 0;
   outline: transparent;
 
-  transition: color 250ms;
+  transition: color var(--main-anim-func);
 }
 .header-nav__link:hover,
 .header-nav__link:focus {

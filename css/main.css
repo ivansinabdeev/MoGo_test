@@ -4,11 +4,14 @@
   --ouwer-txt-cl: #757575;
   --accent-sec-cl: #f38181;
   --accent-cl: #fce38a;
+  --accent-sec-cl-rgba: rgba(243, 129, 129, 0.8);
+  --accent-cl-rgba: rgba(252, 227, 138, 0.8);
   --logo-color-text: #eaffd0;
   --service-icon-cl: #95e1d3;
   --font-accent: "Kaushan Script", cursive;
   --font-main: "Montserrat", sans-serif;
   --font-secondary: "Roboto", sans-serif;
+  --main-anim-func: 250ms linear;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --background-section: #e5e5e5;
   --line-color: #ececec;
@@ -70,7 +73,11 @@ a {
 }
 
 .header {
-  background-color: var(--accent-sec-cl);
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header .container {
@@ -100,7 +107,7 @@ a {
   text-transform: uppercase;
   padding: 40px 0;
   outline: transparent;
-  transition: color 250ms;
+  transition: color var(--main-anim-func);
 }
 
 .header-nav__link:hover,
@@ -137,4 +144,55 @@ a {
   height: 40px;
   border-radius: 50%;
   background-color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 170px;
+  padding-bottom: 230px;
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 1110px;
+  background-color: var(--accent-sec-cl);
+  background-image: linear-gradient(to bottom, var(--accent-sec-cl-rgba), var(--accent-cl-rgba)), url("../images/hero/eagle.png");
+  background-repeat: no-repeat;
+  background-size: 2330px;
+  background-position: center;
+}
+
+.hero__text {
+  font-family: var(--font-accent);
+  color: var(--secondary-txt-cl);
+  font-size: 72px;
+  margin-bottom: 60px;
+}
+
+.hero__title {
+  font-family: var(--font-main);
+  color: var(--secondary-txt-cl);
+  font-weight: 700;
+  font-size: 150px;
+  text-transform: uppercase;
+  width: 830px;
+  margin: 0 auto;
+  margin-bottom: 125px;
+}
+
+.hero__button {
+  font-family: var(--font-main);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--secondary-txt-cl);
+  border: 3px solid currentColor;
+  min-width: 160px;
+  padding: 12px 30px;
+  transition: color var(--main-anim-func);
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  color: var(--accent-sec-cl);
 }/*# sourceMappingURL=main.css.map */

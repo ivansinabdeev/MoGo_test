@@ -1,8 +1,51 @@
 .hero {
+  text-align: center;
+  padding-top: 170px;
+  padding-bottom: 230px;
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 1110px;
+  background-color: var(--accent-sec-cl);
+  background-image: linear-gradient(to bottom, var(--accent-sec-cl-rgba), var(--accent-cl-rgba)),
+    url('../images/hero/eagle.png');
+  background-repeat: no-repeat;
+  background-size: 2330px; // or cover
+  background-position: center;
 }
 .hero__text {
+  font-family: var(--font-accent);
+  color: var(--secondary-txt-cl);
+  font-size: 72px;
+
+  margin-bottom: 60px;
 }
 .hero__title {
+  font-family: var(--font-main);
+  color: var(--secondary-txt-cl);
+  font-weight: 700;
+  font-size: 150px;
+  text-transform: uppercase;
+
+  width: 830px;
+  margin: 0 auto;
+  margin-bottom: 125px;
 }
 .hero__button {
+  font-family: var(--font-main);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--secondary-txt-cl);
+
+  border: 3px solid currentColor;
+  min-width: 160px;
+  padding: 12px 30px;
+
+  transition: color var(--main-anim-func);
+}
+.hero__button:hover,
+.hero__button:focus {
+  color: var(--accent-sec-cl);
 }

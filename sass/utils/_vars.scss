@@ -4,6 +4,8 @@
   --ouwer-txt-cl: #757575;
   --accent-sec-cl: #f38181;
   --accent-cl: #fce38a;
+  --accent-sec-cl-rgba: rgba(243, 129, 129, 0.8);
+  --accent-cl-rgba: rgba(252, 227, 138, 0.8);
   --logo-color-text: #eaffd0;
   --service-icon-cl: #95e1d3;
 
@@ -12,6 +14,10 @@
   --font-accent: 'Kaushan Script', cursive;
   --font-main: 'Montserrat', sans-serif;
   --font-secondary: 'Roboto', sans-serif;
+
+  // ----------- animation --------
+
+  --main-anim-func: 250ms linear;
 
   // -------- other colors --------
   --footer-text-color: rgba(255, 255, 255, 0.6);
