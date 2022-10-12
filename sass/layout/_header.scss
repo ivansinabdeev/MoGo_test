@@ -46,6 +46,7 @@
   height: 3px;
   width: 0;
   background-color: var(--accent-cl);
+
   transition: width 250ms;
 }
 .header-nav__link:hover::after,
@@ -60,10 +61,25 @@
   gap: 40px;
 }
 .header-widget__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #fff;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: var(--secondary-txt-cl);
+
+  transition: color var(--main-anim-func), border-color var(--main-anim-func);
+}
+.header-widget__btn:hover,
+.header-widget__btn:focus {
+  color: var(--accent-cl);
+  border-color: var(--accent-cl);
 }
 .header-widget__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }

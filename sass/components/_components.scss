@@ -1,6 +1,6 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .container {
   width: 1200px;
@@ -8,6 +8,30 @@
   padding: 0 15px;
 }
 .section-text {
+  font-family: var(--font-accent);
+  font-size: 24px;
+  text-align: center;
+
+  margin-bottom: 25px;
 }
 .section-title {
+  display: block;
+  position: relative;
+
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 100px;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -42px;
+  left: 47.5%;
+  height: 3px;
+  width: 60px;
+  background-color: var(--accent-sec-cl);
 }

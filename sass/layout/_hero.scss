@@ -1,6 +1,6 @@
 .hero {
   text-align: center;
-  padding-top: 170px;
+  padding-top: 270px;
   padding-bottom: 230px;
   margin: 0 auto;
   max-width: 1920px;
@@ -9,7 +9,7 @@
   background-image: linear-gradient(to bottom, var(--accent-sec-cl-rgba), var(--accent-cl-rgba)),
     url('../images/hero/eagle.png');
   background-repeat: no-repeat;
-  background-size: 2330px; // or cover
+  background-size: 2330px; // or cover // procent 125%
   background-position: center;
 }
 .hero__text {

@@ -21,6 +21,7 @@
 
 body {
   background-color: var(--secondary-txt-cl);
+  color: var(--main-txt-cl);
   font-family: var(--font-main);
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -62,14 +63,42 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.section-text {
+  font-family: var(--font-accent);
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  display: block;
+  position: relative;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -42px;
+  left: 47.5%;
+  height: 3px;
+  width: 60px;
+  background-color: var(--accent-sec-cl);
 }
 
 .header {
@@ -140,15 +169,33 @@ a {
 }
 
 .header-widget__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #fff;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: var(--secondary-txt-cl);
+  transition: color var(--main-anim-func), border-color var(--main-anim-func);
+}
+
+.header-widget__btn:hover,
+.header-widget__btn:focus {
+  color: var(--accent-cl);
+  border-color: var(--accent-cl);
+}
+
+.header-widget__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .hero {
   text-align: center;
-  padding-top: 170px;
+  padding-top: 270px;
   padding-bottom: 230px;
   margin: 0 auto;
   max-width: 1920px;
@@ -195,4 +242,39 @@ a {
 .hero__button:hover,
 .hero__button:focus {
   color: var(--accent-sec-cl);
+}
+
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 70px;
+  row-gap: 100px;
+}
+
+.service__item {
+  display: flex;
+  column-gap: 30px;
+  width: 343px;
+}
+
+.service__icon {
+  fill: var(--service-icon-cl);
+}
+
+.service__subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.service__descr {
+  font-family: var(--font-secondary);
+  color: var(--ouwer-txt-cl);
+  line-height: 1.14;
+  font-size: 15px;
+}
+
+.team {
+  padding-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
