@@ -1,17 +1,40 @@
 .team {
-  padding-bottom: 50px;
+	padding-bottom: 50px;
 }
 .team__descr {
+	width: 920px;
+	margin: 0 auto;
+	margin-bottom: 95px;
+	text-align: center;
 }
 .team__list {
+	display: flex;
+	gap: 30px;
 }
-.team__item {
-}
+// .team__item {
+//   width: 370px;
+// }
 .team__img {
+	height: 470px;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+.mat-dix {
+	object-position: 25% 50%;
 }
 .team__wrap {
+	padding: 30px 0;
+	text-align: center;
 }
 .team__name {
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
 }
 .team__job {
+	font-family: var(--font-secondary);
+	font-weight: 300;
+	font-size: 15px;
+	color: var(--ouwer-txt-cl);
+	font-style: italic;
 }
